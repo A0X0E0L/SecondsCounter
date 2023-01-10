@@ -19,7 +19,39 @@ let num5 = 0;
 let num6 = 0;
 
 setInterval(function() {
-            num1++;
+            //    dice que empiece sumando   
+            num1++
+            if (num1 >= 9) {
+                num1 = 0;
+                num2++;
+            }
+
+            if (num2 >= 9) {
+                num2 = 0;
+                num3++;
+            }
+
+
+            if (num3 >= 9) {
+                num3 = 0;
+                num4++;
+            }
+
+
+            if (num4 >= 9) {
+                num4 = 0;
+                num5++;
+            }
+            if (num5 >= 9) {
+                num5 = 0;
+                num6++;
+            }
+            if (num6 >= 9) {
+                num6 = 0;
+                num6++;
+            }
+
+
             //render your react application
             ReactDOM.render( < SecondsCounter numero1 = {
                     num1
@@ -42,6 +74,6 @@ setInterval(function() {
                 />, document.querySelector("#app"));
             }, 1000);
 
-
+        // Aquí referencia el #app
 
         //render your react application
